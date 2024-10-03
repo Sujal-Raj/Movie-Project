@@ -29,7 +29,9 @@ function App() {
     <>
 
     <div id="main" className='bg-zinc-900 text-white'>
+      //heading
     <h1 className=' text-center font-bold text-6xl bg-gradient-to-r from-blue-200 via-yellow-100  to-orange-300 text-transparent  bg-clip-text'>MovieLand</h1>
+    //search bar
     <div className="search flex justify-center items-center mt-8">
     <div className='border border-white-900 rounded-xl inline-block ml-5 p-3'>
       <input  type="text" placeholder="Search Movies" className='border border-none focus:outline-none focus:ring-0 h-[100%] rounded-xl mr-2 text-zinc-900 px-2' value={searchValue} onChange={(e)=>{setsearchValue(e.target.value)}}/>
@@ -38,6 +40,7 @@ function App() {
     </div>
      
 
+    //Movies Section
      <div className='grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 p-5'>
      {data.map((items,index)=>{
         return (
